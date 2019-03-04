@@ -4,7 +4,7 @@ const Controller = require('egg').Controller;
 
 class WeatherController extends Controller{
     async report(){
-        const {ctx,service}=this;
+        const {ctx}=this;
         const geturl=ctx.originalUrl;
         let array=geturl.split('=');
         let name=array[1];

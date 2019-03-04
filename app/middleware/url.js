@@ -1,4 +1,4 @@
-module.exports = options =>{
+module.exports =() =>{
     return async function getUrl(ctx,next) {
         ctx.body = {
             time:`${new Date().toLocaleString()}`,

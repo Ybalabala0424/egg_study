@@ -4,10 +4,10 @@ const Controller = require('egg').Controller;
 
 class CalculatorController extends Controller {
     async match() {
-        const {ctx,service}=this;
+        const {ctx}=this;
         const str=ctx.query.str;
         const finalStr=str.replace(' ','+');
-        console.log(finalStr);
+        // console.log(finalStr);
         const result=eval(finalStr);
         ctx.body = result;
     }
